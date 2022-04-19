@@ -3,7 +3,7 @@
 .SH NAME
 _printf - format and write a string, character or integer to stdout
 .SH SYNOPSIS
-#include "holberton.h"
+#include "main.h"
 .br
 #include <stdarg.h>
 .br
@@ -33,5 +33,5 @@ No known bugs
 This page was created in collaboration with ALX-Holberton, 20 minutes before the submission deadline.
 
 .SH AUTHORS
-.B Alfaxad Eyembe and Emmanuel Murairi
+.B Mamudou Bojang and Sabrina Robert
  
