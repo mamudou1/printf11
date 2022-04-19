@@ -1,34 +1,27 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdlib.h>
 #include <stdarg.h>
 
 int _putchar(char c);
-int print_int(va_list arg);
-int print_unsigned(va_list arg);
 int _printf(const char *format, ...);
-int print_char(va_list arg);
-int print_str(va_list arg);
-int print_percent(void);
-void print_binary(unsigned int n, unsigned int *printed);
-int print_unsignedToBinary(va_list arg);
-int print_oct(va_list arg);
-int print_unsignedIntToHex(unsigned int num, char _case);
-int print_hex_base(va_list arg, char _case);
-int print_hex(va_list arg);
-int print_HEX(va_list arg);
-int print_STR(va_list arg);
+void print_string(char *s, int *char_count);
+void print_String(char *s, int *char_count);
+void print_number(int n, int *char_count);
+void print_num(unsigned long u, char sign_char, int base,
+		int *char_count, int *i, int inc, int truncate, int altfmt,
+		int capitals, int length, int ladjust, char padc);
+void print_base(register unsigned int u, register int base,
+		int *char_count, int *i, int inc);
+void print_signed_int(va_list *ap, int sign_char, int plus_sign,
+		int base, int *char_count, int *i, int inc, int truncate,
+		int altfmt, int capitals, int length, int ladjust, char padc);
+void print_unsigned_int(va_list *ap, int sign_char, int base,
+		int *char_count, int *i, int inc, int truncate, int altfmt,
+		int capitals, int length, int ladjust, char padc);
+void process_putchar(char c, int *char_count, int *i, int inc);
+void process_print_string(char *s, int *char_count, int *i, int inc);
+void process_print_String(char *s, int *char_count, int *i, int inc);
+void process_print_number(int n, int *char_count, int *i, int inc);
 
-/**
- * struct identifieStruct - structure definition of a printTypeStruct
- * @indentifier: type
- * @printer: function to print
- */
-typedef struct identifierStruct
-{
-	char *indentifier;
-	int (*printer)(va_list);
-} identifierStruct;
-
-#endif
+#endif /* MAIN_H */
