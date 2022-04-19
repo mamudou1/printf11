@@ -24,4 +24,10 @@ void process_print_string(char *s, int *char_count, int *i, int inc);
 void process_print_String(char *s, int *char_count, int *i, int inc);
 void process_print_number(int n, int *char_count, int *i, int inc);
 
+typedef struct identifierStruct
+{
+	char *indentifier;
+	int (*printer)(va_list);
+} identifierStruct;
+
 #endif /* MAIN_H */
