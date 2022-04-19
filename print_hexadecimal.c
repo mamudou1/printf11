@@ -6,7 +6,6 @@
  * @_case: a  in caps on lower, printing the hex number in caps in lower
  * Return: number of digits printed
  */
-
 int print_hex_base(va_list arg, char _case)
 {
 	unsigned int num = va_arg(arg, unsigned int);
@@ -29,7 +28,6 @@ int print_hex(va_list arg)
 {
 	return (print_hex_base(arg, 'a'));
 }
-
 /**
  * print_HEX - prints a hexadecimal in upper case
  * @arg: list that contains hexadecimal to print
