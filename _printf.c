@@ -87,6 +87,7 @@ int _printf(const char *format, ...)
 			charPrinted++;
 		}
 	}
+
 	va_end(arg);
 	return (charPrinted);
 }
