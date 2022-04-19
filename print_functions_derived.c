@@ -7,6 +7,7 @@
  * @arg: argument
  * Return: 0
  */
+
 int print_unsignedToBinary(va_list arg)
 {
 
@@ -66,6 +67,7 @@ int print_oct(va_list arg)
  * @_case: letter `a` on the case to print it (upper or lower)
  * Return: number or char printed
  */
+
 int print_unsignedIntToHex(unsigned int num, char _case)
 {
 	unsigned int num2;
