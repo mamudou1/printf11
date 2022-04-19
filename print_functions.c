@@ -1,7 +1,6 @@
 #include "main.h"
 #include <unistd.h>
 #include <stdio.h>
-
 /**
  * print_char - writes the character c to stdout
  * @arg: argument
@@ -44,8 +43,6 @@ for (; divisor >= 1; n %= divisor, divisor /= 10, charPrinted++)
 }
 return (charPrinted);
 }
-
-
 
 /**
  * print_STR - prints a string with a `S` (upper case) specificer
